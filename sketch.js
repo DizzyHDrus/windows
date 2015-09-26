@@ -1,14 +1,6 @@
 var names = ["Text", "Getup1NEW", "p5.js", "TheDramaMan"];
-function setup() {
-	createCanvas(screen.width-20, screen.height-155);
-	fill(255);
-	background(256);		
-	stroke(2, 2, 230);
-}
-
-function draw() {
-	if(mouseIsPressed) {
-		fill(240);
+function spawn(){
+fill(240);
 		rect(mouseX, mouseY, 100, 70);
 		fill(2, 2, 230);
 		rect(mouseX, mouseY, 100, 12);
@@ -29,6 +21,25 @@ function draw() {
 
 		
 
+}
+
+function setup() {
+	createCanvas(screen.width-20, screen.height-155);
+	fill(255);
+	background(256);		
+	stroke(2, 2, 230);
+}
+
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      spawn();
+    }
+}
+function draw() {
+	if(mouseIsPressed) {
+		spawn();
 	} else {
 //TODO: implement idling function
 	}
