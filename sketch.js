@@ -36,7 +36,7 @@ function keyPressed() {
     if (keyCode == UP) {
       spawn();
     }
-}
+}}
 function draw() {
 	if(mouseIsPressed) {
 		spawn();
