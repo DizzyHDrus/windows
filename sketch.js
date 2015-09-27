@@ -31,12 +31,12 @@ function setup() {
 }
 
 
-void keyPressed() {
+function keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
       spawn();
     }
-}
+}}
 function draw() {
 	if(mouseIsPressed) {
 		spawn();
