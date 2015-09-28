@@ -1,4 +1,4 @@
-var names = ["Text", "Getup1NEW", "p5.js", "TheDramaMan", "<--- This message will never shown!"];
+var names = ["Text", "Getup1NEW", "p5.js", "TheDramaMan", "LOL", "<--- This message will never shown!"];
 function spawn(){
 fill(240);
 		rect(mouseX, mouseY, 100, 70);
